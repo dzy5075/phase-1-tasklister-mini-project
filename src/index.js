@@ -15,6 +15,10 @@ document.body.append(ul)
     const btn = document.createElement("button")
     ul.append(li)
     btn.innerText = "X"
+    btn.addEventListener("click", ()=>{
+      li.remove()
+      btn.remove()
+    })
     li.innerText = text.value + " " + btn.value
     li.append(btn)
   })
